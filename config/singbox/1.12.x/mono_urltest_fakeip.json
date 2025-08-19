@@ -56,6 +56,8 @@
     "rules": [
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
+	  {"domain_keyword": ["raisemby", "pemby"], "outbound": "🎯 全球直连"},
+	  {"domain_suffix": ["emby.lilyya.lat", "mingri.site", "127255.best"], "outbound": "🎯 全球直连"},
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
@@ -170,5 +172,6 @@
     "timestamp": true
   }
 }
+
 
 
